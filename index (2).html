@@ -1,0 +1,2366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leeds Emergency Plumber | Boiler Repair | Northern Flow Plumbing & Heating</title>
+<meta name="description" content="Leeds' most trusted emergency plumber. Gas Safe registered. 60-minute response guaranteed across all Leeds postcodes. 24/7 boiler repair, burst pipes & central heating. Call 0113 488 2901.">
+<meta property="og:title" content="Northern Flow Plumbing & Heating — Leeds">
+<meta property="og:description" content="Gas Safe registered. 60-min response. 214 five-star reviews. Call 0113 488 2901.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:wght@400;500;600&display=swap');
+
+:root {
+  --bg-primary: #0B0F1A;
+  --bg-card: #131929;
+  --bg-card-hover: #1A2235;
+  --gold: #E8A020;
+  --gold-light: #F5B733;
+  --red: #DC2626;
+  --red-hover: #B91C1C;
+  --white: #F0EDE8;
+  --muted: #8A8580;
+  --border: #1E2538;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg-primary);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  overflow-x: hidden;
+}
+
+/* ── KEYFRAMES ── */
+@keyframes pulse-dot { 0%,100%{opacity:1} 50%{opacity:0.3} }
+@keyframes pulse-ring {
+  0%{box-shadow:0 0 0 0 rgba(220,38,38,0.4)}
+  70%{box-shadow:0 0 0 14px rgba(220,38,38,0)}
+  100%{box-shadow:0 0 0 0 rgba(220,38,38,0)}
+}
+@keyframes gold-glow {
+  0%,100%{text-shadow:0 0 8px rgba(232,160,32,0.3)}
+  50%{text-shadow:0 0 20px rgba(232,160,32,0.7), 0 0 40px rgba(232,160,32,0.3)}
+}
+@keyframes spin { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+@keyframes fadeUp { from{opacity:0;transform:translateY(40px)} to{opacity:1;transform:translateY(0)} }
+@keyframes slideInLeft { from{opacity:0;transform:translateX(-60px)} to{opacity:1;transform:translateX(0)} }
+@keyframes slideInRight { from{opacity:0;transform:translateX(60px)} to{opacity:1;transform:translateX(0)} }
+@keyframes slideDown { from{transform:translateY(-100%);opacity:0} to{transform:translateY(0);opacity:1} }
+@keyframes scaleIn { from{opacity:0;transform:scale(0.9)} to{opacity:1;transform:scale(1)} }
+@keyframes bounceIn { 0%{transform:translateY(10px)} 50%{transform:translateY(-4px)} 100%{transform:translateY(0)} }
+@keyframes pulse-border {
+  0%,100%{box-shadow:0 0 0 0 rgba(220,38,38,0.3)}
+  50%{box-shadow:0 0 0 6px rgba(220,38,38,0)}
+}
+@keyframes map-ping {
+  0%{transform:scale(1);opacity:0.8}
+  100%{transform:scale(3);opacity:0}
+}
+
+/* ── PAGE LOAD ANIMATIONS ── */
+.anim-bar { animation: slideDown 0.4s ease forwards; }
+.anim-nav { animation: fadeUp 0.4s 0.2s ease both; }
+.anim-badge { animation: slideInLeft 0.5s 0.3s ease both; opacity:0; }
+.anim-h1-1 { animation: fadeUp 0.5s 0.4s ease both; opacity:0; }
+.anim-h1-2 { animation: fadeUp 0.5s 0.5s ease both; opacity:0; }
+.anim-h1-3 { animation: fadeUp 0.5s 0.6s ease both; opacity:0; }
+.anim-h1-4 { animation: fadeUp 0.5s 0.7s ease both; opacity:0; }
+.anim-sub { animation: fadeUp 0.5s 0.8s ease both; opacity:0; }
+.anim-trust-1 { animation: fadeUp 0.4s 0.9s ease both; opacity:0; }
+.anim-trust-2 { animation: fadeUp 0.4s 1.0s ease both; opacity:0; }
+.anim-trust-3 { animation: fadeUp 0.4s 1.1s ease both; opacity:0; }
+.anim-trust-4 { animation: fadeUp 0.4s 1.2s ease both; opacity:0; }
+.anim-cta { animation: scaleIn 0.4s 1.0s ease both; opacity:0; }
+.anim-img { animation: slideInRight 0.6s 0.6s ease both; opacity:0; }
+
+/* ── SCROLL ANIMATION BASE ── */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── ANNOUNCEMENT BAR ── */
+.announce-bar {
+  background: var(--gold);
+  color: var(--bg-primary);
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  position: relative;
+  z-index: 200;
+}
+.announce-bar .bar-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.announce-bar .bar-phone {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+.announce-bar .bar-phone a {
+  color: var(--bg-primary);
+  text-decoration: none;
+}
+.announce-bar .bar-phone:hover a { text-decoration: underline; }
+
+/* ── NAV ── */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--bg-primary);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.3s, backdrop-filter 0.3s;
+}
+.nav.scrolled {
+  background: rgba(11,15,26,0.85);
+  backdrop-filter: blur(20px);
+}
+.nav-logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+.nav-logo .logo-main {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: 1px;
+}
+.nav-logo .logo-sub {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  color: var(--gold);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--gold); }
+.nav-cta {
+  background: var(--red);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.nav-cta:hover { background: var(--red-hover); transform: scale(1.03); }
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 8px;
+  background: none;
+  border: none;
+}
+.hamburger span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: var(--white);
+  transition: all 0.3s;
+}
+.mobile-menu {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: var(--bg-primary);
+  z-index: 999;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a {
+  color: var(--white);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: color 0.2s;
+}
+.mobile-menu a:hover { color: var(--gold); }
+.mobile-menu-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 32px;
+  cursor: pointer;
+}
+.mobile-sticky-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: var(--red);
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 -4px 20px rgba(220,38,38,0.4);
+}
+.mobile-sticky-bar a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ── HERO ── */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-primary);
+  background-image:
+    linear-gradient(rgba(232,160,32,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(232,160,32,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=80');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.12;
+  z-index: 0;
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 80px 40px 60px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  gap: 60px;
+  align-items: center;
+  flex: 1;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(232,160,32,0.08);
+  border: 1px solid rgba(232,160,32,0.4);
+  border-radius: 30px;
+  padding: 8px 18px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 28px;
+}
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold);
+  animation: pulse-dot 1s infinite;
+}
+.hero h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(44px, 6vw, 80px);
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.0;
+  color: var(--white);
+  margin-bottom: 0;
+}
+.hero h1 .gold { color: var(--gold); }
+.hero h1 .gold-glow {
+  color: var(--gold);
+  animation: gold-glow 3s ease-in-out infinite;
+}
+.hero-sub {
+  font-size: 19px;
+  color: var(--muted);
+  margin-top: 20px;
+  line-height: 1.7;
+  max-width: 560px;
+}
+.trust-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 28px;
+}
+.trust-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--white);
+}
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 36px;
+  align-items: center;
+}
+.btn-primary {
+  background: var(--red);
+  color: white;
+  padding: 20px 40px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  cursor: pointer;
+  animation: pulse-ring 2s infinite;
+  transition: background 0.2s;
+  position: relative;
+}
+.btn-primary:hover { background: var(--red-hover); }
+.btn-primary-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.btn-primary-sub {
+  font-size: 13px;
+  color: var(--muted);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+}
+.btn-ghost {
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  background: transparent;
+  padding: 18px 36px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  display: inline-block;
+}
+.btn-ghost:hover { background: var(--gold); color: var(--bg-primary); }
+.reviews-strip {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+.review-avatars {
+  display: flex;
+}
+.review-avatars img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--bg-primary);
+  margin-left: -10px;
+  object-fit: cover;
+}
+.review-avatars img:first-child { margin-left: 0; }
+.review-stars { color: var(--gold); font-size: 18px; letter-spacing: 2px; }
+.review-text { font-size: 14px; color: var(--white); }
+.review-link { color: var(--gold); text-decoration: underline; margin-left: 4px; }
+
+/* Hero right column */
+.hero-right {
+  position: relative;
+}
+.hero-img-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(232,160,32,0.3);
+}
+.hero-img-card img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+.img-overlay-bottom {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  background: rgba(11,15,26,0.9);
+  border: 1px solid rgba(232,160,32,0.3);
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.img-overlay-bottom .pin-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+.img-overlay-top {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: var(--red);
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 1.2;
+}
+.img-overlay-top .t247 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: white;
+  letter-spacing: 1px;
+}
+.img-overlay-top .t247-sub {
+  font-size: 11px;
+  color: rgba(255,255,255,0.8);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.hero-stat-float {
+  position: absolute;
+  bottom: -24px;
+  right: -16px;
+  background: var(--bg-card);
+  border: 1px solid var(--gold);
+  border-radius: 12px;
+  padding: 16px 20px;
+  min-width: 160px;
+  z-index: 2;
+}
+.hero-stat-float .stat-num {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.hero-stat-float .stat-label {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+/* ── HERO STATS BAR ── */
+.hero-stats-bar {
+  background: var(--bg-card);
+  border-top: 1px solid rgba(232,160,32,0.4);
+  position: relative;
+  z-index: 1;
+  padding: 40px;
+}
+.stats-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.stat-item {
+  text-align: center;
+  position: relative;
+  padding: 0 40px;
+}
+.stat-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40px;
+  width: 1px;
+  background: rgba(232,160,32,0.3);
+}
+.stat-item .stat-val {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 800;
+  color: var(--gold);
+  line-height: 1;
+}
+.stat-item .stat-lab {
+  font-size: 13px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+
+/* ── TRUST BAR ── */
+.trust-bar {
+  background: #0D1117;
+  padding: 48px 40px;
+  border-top: 1px solid rgba(232,160,32,0.2);
+  border-bottom: 1px solid rgba(232,160,32,0.2);
+}
+.trust-bar-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.trust-bar-label {
+  text-align: center;
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.trust-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+.trust-item {
+  text-align: center;
+  filter: grayscale(1) opacity(0.6);
+  transition: filter 0.3s;
+  cursor: default;
+}
+.trust-item:hover { filter: grayscale(0) opacity(1); }
+.trust-item .ti-main {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+}
+.trust-item .ti-sub {
+  font-size: 12px;
+  color: var(--white);
+  margin-top: 4px;
+  letter-spacing: 0.5px;
+}
+.trust-item .gas-pill {
+  border: 2px solid #00843D;
+  color: #00843D;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.trust-item .gas-pill-sub {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+.trust-item .tp-stars { color: #00b67a; font-size: 16px; letter-spacing: 2px; }
+.trust-item .tp-label { color: #00b67a; font-size: 13px; font-weight: 600; margin-top: 2px; }
+
+/* ── SECTION COMMONS ── */
+.section-label {
+  font-size: 12px;
+  color: var(--gold);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 16px;
+  font-family: 'DM Sans', sans-serif;
+}
+.section-h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(34px, 4vw, 52px);
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--white);
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* ── SERVICES ── */
+.services {
+  padding: 100px 0;
+  background: var(--bg-primary);
+  background-image:
+    linear-gradient(rgba(232,160,32,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(232,160,32,0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+.services-header { max-width: 700px; margin-bottom: 60px; }
+.services-header p {
+  font-size: 17px;
+  color: var(--muted);
+  line-height: 1.75;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.service-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+.service-card:hover::before { transform: scaleX(1); }
+.service-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  background: var(--bg-card-hover);
+}
+.service-card .sc-icon { font-size: 40px; margin-bottom: 16px; }
+.service-card .sc-tag {
+  display: inline-block;
+  background: rgba(232,160,32,0.12);
+  border: 1px solid rgba(232,160,32,0.3);
+  color: var(--gold);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+.service-card h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+.service-card p {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.service-card .sc-link {
+  color: var(--gold);
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: gap 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.service-card .sc-link:hover { gap: 10px; }
+
+.emergency-banner {
+  margin-top: 48px;
+  background: linear-gradient(135deg, #1a0a0a, #2d0a0a);
+  border: 1px solid rgba(220,38,38,0.3);
+  border-radius: 16px;
+  padding: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.eb-left { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+.eb-icon { font-size: 60px; }
+.eb-left h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+.eb-left p { font-size: 16px; color: var(--muted); }
+.eb-right { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.eb-right .btn-primary { font-size: 24px; padding: 20px 40px; white-space: nowrap; }
+.eb-right .eb-sub { font-size: 13px; color: var(--muted); }
+
+/* ── WHY CHOOSE ── */
+.why-section {
+  background: #0D1117;
+  padding: 100px 0;
+}
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+.why-left { position: relative; }
+.why-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+.why-owner-card {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(11,15,26,0.95);
+  border: 1px solid rgba(232,160,32,0.4);
+  border-radius: 10px;
+  padding: 16px 20px;
+}
+.why-owner-card .oc-name {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--white);
+  text-transform: uppercase;
+}
+.why-owner-card .oc-title { font-size: 13px; color: var(--muted); margin: 2px 0; }
+.why-owner-card .oc-gas {
+  font-size: 12px;
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+}
+.why-years-card {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  background: var(--bg-card);
+  border-top: 3px solid var(--gold);
+  border-radius: 10px;
+  padding: 20px 24px;
+  text-align: center;
+  transform: rotate(-3deg);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+.why-years-card .yc-num {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--gold);
+}
+.why-years-card .yc-lab { font-size: 14px; color: var(--muted); }
+.why-right {}
+.why-right .section-h2 { margin-top: 8px; }
+.why-body { font-size: 17px; color: var(--muted); line-height: 1.8; margin-top: 16px; }
+.feature-list {
+  list-style: none;
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.feature-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-size: 16px;
+  color: var(--white);
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.4s, transform 0.4s;
+}
+.feature-list li.visible { opacity: 1; transform: translateX(0); }
+.feature-tick {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(232,160,32,0.15);
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.guarantee-wrap {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.guarantee-seal {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 2px dashed var(--gold);
+  background: var(--bg-card);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: spin 30s linear infinite;
+  flex-shrink: 0;
+  padding: 20px;
+}
+.seal-num {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--gold);
+  line-height: 1;
+}
+.seal-resp { font-size: 11px; color: var(--white); text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
+.seal-gua { font-size: 11px; color: var(--white); text-transform: uppercase; letter-spacing: 1px; }
+.seal-free { font-size: 10px; color: var(--muted); margin-top: 4px; }
+
+/* ── GALLERY ── */
+.gallery-section {
+  padding: 80px 0;
+  background: var(--bg-primary);
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 48px;
+}
+.gallery-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.gallery-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s;
+}
+.gallery-card:hover img { transform: scale(1.05); }
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 60%);
+  transition: opacity 0.3s;
+}
+.gallery-card:hover .gallery-overlay { opacity: 0.7; }
+.gallery-info {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 60px;
+}
+.gallery-info .gi-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.gallery-info .gi-loc { font-size: 12px; color: rgba(255,255,255,0.7); margin-top: 4px; }
+.gallery-tag {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--gold);
+  color: var(--bg-primary);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.gallery-footer {
+  text-align: center;
+  margin-top: 40px;
+}
+.gallery-footer p { color: var(--muted); font-size: 16px; }
+.gallery-footer a { color: var(--gold); text-decoration: underline; }
+
+/* ── REVIEWS ── */
+.reviews-section {
+  padding: 100px 0;
+  background: #0D1117;
+}
+.reviews-header { text-align: center; margin-bottom: 60px; }
+.reviews-header .big-stars { font-size: 36px; color: var(--gold); letter-spacing: 4px; margin: 12px 0; }
+.reviews-header p { font-size: 17px; color: var(--muted); max-width: 600px; margin: 0 auto 24px; }
+.reviews-avatars-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.reviews-avatars-row .ra-imgs { display: flex; }
+.reviews-avatars-row .ra-imgs img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #0D1117;
+  margin-left: -8px;
+  object-fit: cover;
+}
+.reviews-avatars-row .ra-imgs img:first-child { margin-left: 0; }
+.reviews-avatars-row .ra-text { font-size: 14px; color: var(--muted); }
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.review-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px;
+  transition: border-color 0.3s;
+}
+.review-card:hover { border-color: var(--gold); }
+.rc-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.rc-google {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.g-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+}
+.g-icon span { background: linear-gradient(#4285F4,#EA4335,#FBBC05,#34A853); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+.rc-label { font-size: 13px; color: var(--muted); }
+.rc-date { font-size: 13px; color: var(--muted); }
+.rc-stars { color: var(--gold); font-size: 16px; letter-spacing: 2px; margin-bottom: 14px; }
+.rc-text { font-size: 15px; color: var(--white); line-height: 1.7; margin-bottom: 20px; font-style: italic; }
+.rc-text::before { content: '"'; }
+.rc-text::after { content: '"'; }
+.rc-reviewer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+}
+.rc-reviewer img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.rc-reviewer .rr-name { font-size: 15px; font-weight: 600; color: var(--white); }
+.rc-reviewer .rr-loc { font-size: 13px; color: var(--muted); }
+.reviews-cta {
+  text-align: center;
+  margin-top: 48px;
+}
+.reviews-cta-card {
+  display: inline-block;
+  background: var(--bg-card);
+  border: 1px solid var(--gold);
+  border-radius: 16px;
+  padding: 32px 48px;
+  text-align: center;
+}
+.reviews-cta-card p {
+  font-size: 18px;
+  color: var(--white);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.reviews-cta-card .btn-ghost { font-size: 16px; padding: 14px 32px; }
+
+/* ── AREAS ── */
+.areas-section {
+  padding: 80px 0;
+  background: var(--bg-primary);
+}
+.areas-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+  margin-top: 60px;
+}
+.map-visual {
+  background: var(--bg-card);
+  border: 1px solid rgba(232,160,32,0.3);
+  border-radius: 16px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.map-leeds {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 64px;
+  font-weight: 800;
+  color: var(--gold);
+  line-height: 1;
+  position: relative;
+  z-index: 2;
+}
+.map-sub {
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 4px;
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 2;
+}
+.map-dots {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  z-index: 2;
+}
+.map-dot {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--white);
+}
+.map-dot::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold);
+  flex-shrink: 0;
+  animation: pulse-dot 2s infinite;
+}
+.map-ping {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+}
+.map-ping::before,
+.map-ping::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid rgba(232,160,32,0.4);
+  animation: map-ping 2s ease-out infinite;
+}
+.map-ping::after { animation-delay: 1s; }
+.map-bottom { font-size: 12px; color: var(--muted); margin-top: 16px; position: relative; z-index: 2; }
+.areas-right {}
+.areas-right .section-h2 { margin-top: 8px; }
+.areas-body { font-size: 17px; color: var(--muted); line-height: 1.8; margin-bottom: 32px; }
+.chips-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+.area-chip {
+  background: var(--bg-card);
+  border: 1px solid rgba(232,160,32,0.4);
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: var(--white);
+  cursor: default;
+  transition: background 0.2s, color 0.2s;
+  font-family: 'DM Sans', sans-serif;
+}
+.area-chip:hover { background: var(--gold); color: var(--bg-primary); }
+.areas-note {
+  margin-top: 24px;
+  font-size: 14px;
+  color: var(--muted);
+  font-style: italic;
+}
+.areas-note a { color: var(--gold); text-decoration: none; }
+.areas-note a:hover { text-decoration: underline; }
+
+/* ── CONTACT ── */
+.contact-section {
+  padding: 100px 0;
+  background: #0D1117;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: start;
+}
+.contact-left {}
+.contact-left .section-h2 { margin-top: 8px; }
+.contact-left > p {
+  font-size: 17px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+.contact-card {
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 16px;
+  border: 1px solid var(--border);
+}
+.contact-card.red-card {
+  border-color: rgba(220,38,38,0.4);
+  animation: pulse-border 3s infinite;
+}
+.contact-card.gold-card { border-color: rgba(232,160,32,0.3); }
+.cc-phone-num {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--white);
+  text-decoration: none;
+  display: block;
+  margin: 8px 0 4px;
+  transition: color 0.2s;
+}
+.cc-phone-num:hover { color: var(--gold); }
+.cc-label { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+.cc-icon { font-size: 40px; margin-bottom: 4px; }
+.cc-text { font-size: 15px; color: var(--white); margin-bottom: 4px; }
+.cc-sub { font-size: 13px; color: var(--muted); }
+.gas-badge {
+  border: 2px solid #00843D;
+  border-radius: 8px;
+  padding: 16px 24px;
+  text-align: center;
+  margin-top: 8px;
+}
+.gas-badge .gb-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #00843D;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.gas-badge .gb-num { font-size: 14px; color: var(--muted); margin: 4px 0; }
+.gas-badge .gb-link { font-size: 13px; color: var(--gold); text-decoration: none; }
+.gas-badge .gb-link:hover { text-decoration: underline; }
+
+/* ── FORM ── */
+.form-wrap {
+  background: var(--bg-card);
+  border: 1px solid rgba(232,160,32,0.3);
+  border-radius: 16px;
+  padding: 40px;
+}
+.form-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+}
+.form-sub { font-size: 15px; color: var(--muted); margin-bottom: 28px; }
+.form-group { margin-bottom: 20px; }
+.form-label {
+  display: block;
+  font-size: 13px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  font-family: 'DM Sans', sans-serif;
+}
+.form-input, .form-select, .form-textarea {
+  width: 100%;
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 18px;
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+  appearance: none;
+}
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(232,160,32,0.15);
+}
+.form-input::placeholder, .form-textarea::placeholder { color: #4a4a4a; }
+.form-select option { background: var(--bg-card); color: var(--white); }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-textarea { resize: vertical; min-height: 100px; }
+.radio-group { display: flex; flex-direction: column; gap: 12px; }
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.radio-option input[type="radio"] { display: none; }
+.radio-custom {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  background: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s;
+  flex-shrink: 0;
+}
+.radio-option input[type="radio"]:checked + .radio-custom {
+  border-color: var(--gold);
+  background: var(--gold);
+}
+.radio-option input[type="radio"]:checked + .radio-custom::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--bg-primary);
+}
+.radio-label { font-size: 15px; color: var(--white); }
+.btn-submit {
+  width: 100%;
+  background: var(--red);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 18px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 8px;
+}
+.btn-submit:hover { background: var(--red-hover); }
+.form-secure { text-align: center; font-size: 12px; color: var(--muted); margin-top: 16px; }
+.form-error {
+  color: var(--red);
+  font-size: 12px;
+  margin-top: 4px;
+  display: none;
+}
+.form-input.error, .form-select.error { border-color: var(--red); }
+
+.form-success {
+  display: none;
+  text-align: center;
+  padding: 40px;
+}
+.form-success .success-icon { font-size: 60px; margin-bottom: 16px; }
+.form-success h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+.form-success p { font-size: 16px; color: var(--muted); }
+.form-success a { color: var(--gold); }
+
+/* ── FOOTER ── */
+.footer {
+  background: #080C14;
+  border-top: 1px solid rgba(232,160,32,0.2);
+  padding: 80px 0 0;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+  gap: 48px;
+  margin-bottom: 60px;
+}
+.footer-brand .fb-logo {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.footer-brand .fb-sub {
+  font-size: 11px;
+  color: var(--gold);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 2px;
+  font-family: 'DM Sans', sans-serif;
+}
+.footer-brand .fb-desc {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-top: 16px;
+}
+.social-row { display: flex; gap: 12px; margin-top: 20px; }
+.social-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+  text-decoration: none;
+  color: var(--muted);
+}
+.social-btn:hover { border-color: var(--gold); color: var(--gold); }
+.footer-col h4 {
+  font-size: 11px;
+  color: var(--gold);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.footer-links { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+.footer-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 2.2;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--gold); }
+.footer-contact-num {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--white);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  transition: color 0.2s;
+}
+.footer-contact-num:hover { color: var(--gold); }
+.footer-contact-item { font-size: 14px; color: var(--muted); line-height: 2.2; }
+.footer-trust-badges { display: flex; flex-direction: column; gap: 8px; margin-top: 20px; }
+.ftb-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  width: fit-content;
+}
+.ftb-green { border: 1px solid #00843D; color: #00843D; }
+.ftb-gold { border: 1px solid var(--gold); color: var(--gold); }
+.ftb-grey { border: 1px solid var(--border); color: var(--muted); }
+
+.footer-bottom {
+  border-top: 1px solid var(--border);
+  padding: 28px 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.fb-legal { font-size: 13px; color: var(--muted); }
+.fb-links { display: flex; gap: 20px; }
+.fb-links a { font-size: 13px; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+.fb-links a:hover { color: var(--white); }
+.fb-credit { font-size: 13px; color: var(--gold); font-weight: 600; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1100px) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 900px) {
+  .hero-content { grid-template-columns: 1fr; }
+  .hero-right { display: none; }
+  .why-grid { grid-template-columns: 1fr; }
+  .why-left { display: none; }
+  .areas-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .mobile-sticky-bar { display: flex; }
+  body { padding-bottom: 60px; }
+}
+@media (max-width: 640px) {
+  .announce-bar .bar-text { display: none; }
+  .container { padding: 0 20px; }
+  .hero-content { padding: 60px 20px 40px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: 1fr; }
+  .reviews-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .emergency-banner { flex-direction: column; }
+  .eb-left { flex-direction: column; gap: 16px; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+  .form-grid { grid-template-columns: 1fr; }
+  .stats-inner { gap: 12px; }
+  .stat-item { padding: 0 16px; }
+  .trust-items { gap: 24px; }
+  .hero-stats-bar { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announce-bar anim-bar">
+  <div class="bar-text">⚡ 60-Minute Response Guaranteed Across All Leeds Postcodes — Gas Safe Registered • Fully Insured</div>
+  <div class="bar-phone">📞 <a href="tel:01134882901">0113 488 2901</a></div>
+</div>
+
+<!-- NAV -->
+<nav class="nav anim-nav" id="mainNav">
+  <a href="#" class="nav-logo" style="text-decoration:none;">
+    <span class="logo-main">Northern Flow</span>
+    <span class="logo-sub">Plumbing &amp; Heating</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#services">Emergency</a></li>
+    <li><a href="#services">Boilers</a></li>
+    <li><a href="#areas">Areas</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="tel:01134882901" class="nav-cta">📞 Call Now</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" id="menuClose">✕</button>
+  <a href="#services" onclick="closeMobileMenu()">Services</a>
+  <a href="#services" onclick="closeMobileMenu()">Emergency</a>
+  <a href="#services" onclick="closeMobileMenu()">Boilers</a>
+  <a href="#areas" onclick="closeMobileMenu()">Areas</a>
+  <a href="#reviews" onclick="closeMobileMenu()">Reviews</a>
+  <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+  <a href="tel:01134882901" style="color:var(--gold)">📞 0113 488 2901</a>
+</div>
+
+<!-- MOBILE STICKY BAR -->
+<div class="mobile-sticky-bar">
+  <a href="tel:01134882901">📞 TAP TO CALL — 0113 488 2901</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-badge anim-badge">
+        <span class="badge-dot"></span>
+        Available Now — 24/7 Emergency Response
+      </div>
+      <h1>
+        <div class="anim-h1-1">Burst Pipe?</div>
+        <div class="anim-h1-2 gold">Boiler Gone?</div>
+        <div class="anim-h1-3">We're There In</div>
+        <div class="anim-h1-4 gold-glow">60 Minutes.</div>
+      </h1>
+      <p class="hero-sub anim-sub">Leeds' most trusted Gas Safe registered engineer. Mark and his team have been fixing plumbing and heating emergencies across West Yorkshire since 2007 — any time, any day, including Christmas.</p>
+      <div class="trust-badges">
+        <span class="trust-badge anim-trust-1">✅ Gas Safe Registered</span>
+        <span class="trust-badge anim-trust-2">⭐ 4.9 Google Rating</span>
+        <span class="trust-badge anim-trust-3">🔒 Fully Insured</span>
+        <span class="trust-badge anim-trust-4">🚫 No Hidden Charges</span>
+      </div>
+      <div class="hero-buttons anim-cta">
+        <div class="btn-primary-wrap">
+          <a href="tel:01134882901" class="btn-primary">📞 Call 0113 488 2901</a>
+          <span class="btn-primary-sub">Average answer: under 30 seconds</span>
+        </div>
+        <a href="#contact" class="btn-ghost">📋 Get a Free Quote</a>
+      </div>
+      <div class="reviews-strip anim-sub" style="animation-delay:1.1s">
+        <div class="review-avatars">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&q=80" alt="Leeds customer Sarah" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80" alt="Leeds customer James" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80" alt="Leeds customer Karen" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&q=80" alt="Leeds customer David" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&q=80" alt="Leeds customer Emma" loading="lazy">
+        </div>
+        <span class="review-stars">★★★★★</span>
+        <span class="review-text">4.9/5 — Rated by 214 Leeds homeowners <a href="#reviews" class="review-link">See all reviews →</a></span>
+      </div>
+    </div>
+    <div class="hero-right anim-img">
+      <div class="hero-img-card">
+        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80" alt="Northern Flow plumber working on copper pipes in Leeds" loading="lazy">
+        <div class="img-overlay-bottom">
+          <span class="pin-dot"></span>
+          📍 Based in Kirkstall, Leeds LS4
+        </div>
+        <div class="img-overlay-top">
+          <div class="t247">24/7</div>
+          <div class="t247-sub">Emergency</div>
+        </div>
+      </div>
+      <div class="hero-stat-float">
+        <div class="stat-num">🔧 <span id="jobCounter">0</span></div>
+        <div class="stat-label">jobs completed this month in Leeds</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HERO STATS BAR -->
+<div class="hero-stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item scroll-reveal">
+      <div class="stat-val" data-target="18" data-suffix="+">0+</div>
+      <div class="stat-lab">Years Experience</div>
+    </div>
+    <div class="stat-item scroll-reveal" style="transition-delay:0.1s">
+      <div class="stat-val" data-target="2600" data-suffix="+">0+</div>
+      <div class="stat-lab">Jobs Completed</div>
+    </div>
+    <div class="stat-item scroll-reveal" style="transition-delay:0.2s">
+      <div class="stat-val">60 Min</div>
+      <div class="stat-lab">Avg Response Time</div>
+    </div>
+    <div class="stat-item scroll-reveal" style="transition-delay:0.3s">
+      <div class="stat-val">4.9 ★</div>
+      <div class="stat-lab">Google Rating</div>
+    </div>
+  </div>
+</div>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <div class="trust-bar-label">Certified, Verified &amp; Trusted By</div>
+    <div class="trust-items">
+      <div class="trust-item scroll-reveal">
+        <div class="gas-pill">GAS SAFE</div>
+        <div class="gas-pill-sub">Reg. 556821</div>
+      </div>
+      <div class="trust-item scroll-reveal" style="transition-delay:0.1s">
+        <div class="ti-main">9.8/10</div>
+        <div class="ti-sub">Checkatrade</div>
+      </div>
+      <div class="trust-item scroll-reveal" style="transition-delay:0.2s">
+        <div class="tp-stars">★★★★★</div>
+        <div class="tp-label">Excellent — Trustpilot</div>
+      </div>
+      <div class="trust-item scroll-reveal" style="transition-delay:0.3s">
+        <div style="border:2px solid var(--border);padding:6px 14px;border-radius:6px;font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;color:var(--white);letter-spacing:1px;">WHICH? TRUSTED TRADER</div>
+      </div>
+      <div class="trust-item scroll-reveal" style="transition-delay:0.4s">
+        <div class="ti-main">4.9</div>
+        <div class="ti-sub">214 Google Reviews</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="services-header scroll-reveal">
+      <div class="section-label">What We Do</div>
+      <h2 class="section-h2">Every Plumbing &amp;<br>Heating Problem — Solved</h2>
+      <p>From a dripping tap at 9am to a burst pipe at 3am on New Year's Eve — Northern Flow has been fixing it all across Leeds since 2007.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card scroll-reveal">
+        <div class="sc-tag">Most Requested</div>
+        <div class="sc-icon">🚨</div>
+        <h3>Burst Pipe Emergency</h3>
+        <p>Water pouring where it shouldn't? Our engineers carry full pipe repair kits on every van. We isolate, repair and pressure-test within the hour.</p>
+        <a href="#contact" class="sc-link">Learn more →</a>
+      </div>
+      <div class="service-card scroll-reveal" style="transition-delay:0.1s">
+        <div class="sc-tag">24/7 Available</div>
+        <div class="sc-icon">🔥</div>
+        <h3>Boiler Breakdown Repair</h3>
+        <p>No heat or hot water is miserable — especially in a Leeds winter. We diagnose and repair all boiler makes and models, same day.</p>
+        <a href="#contact" class="sc-link">Learn more →</a>
+      </div>
+      <div class="service-card scroll-reveal" style="transition-delay:0.2s">
+        <div class="sc-tag">0% Finance</div>
+        <div class="sc-icon">🏠</div>
+        <h3>Boiler Installation</h3>
+        <p>New Worcester Bosch, Vaillant or Ideal boiler supplied and fitted. Full system flush included. 10-year manufacturer warranty available. 0% finance over 12 months.</p>
+        <a href="#contact" class="sc-link">Learn more →</a>
+      </div>
+      <div class="service-card scroll-reveal" style="transition-delay:0.3s">
+        <div class="sc-tag">No Mess Tech</div>
+        <div class="sc-icon">💧</div>
+        <h3>Leak Detection</h3>
+        <p>Hidden leaks cause thousands in damage. We use thermal imaging cameras to locate leaks behind walls and under floors — without unnecessary damage.</p>
+        <a href="#contact" class="sc-link">Learn more →</a>
+      </div>
+      <div class="service-card scroll-reveal" style="transition-delay:0.1s">
+        <div class="sc-tag">Same Day</div>
+        <div class="sc-icon">🚿</div>
+        <h3>Drain Unblocking</h3>
+        <p>Blocked sink, toilet or drain? High-pressure water jetting clears even the toughest blockages in minutes. CCTV drain surveys available.</p>
+        <a href="#contact" class="sc-link">Learn more →</a>
+      </div>
+      <div class="service-card scroll-reveal" style="transition-delay:0.2s">
+        <div class="sc-tag">10yr Guarantee</div>
+        <div class="sc-icon">🌡️</div>
+        <h3>Central Heating</h3>
+        <p>Full central heating system design, supply and installation. Power flushing, radiator upgrades, TRV fitting and system optimisation.</p>
+        <a href="#contact" class="sc-link">Learn more →</a>
+      </div>
+      <div class="service-card scroll-reveal" style="transition-delay:0.3s">
+        <div class="sc-tag">Same Day Cert</div>
+        <div class="sc-icon">📋</div>
+        <h3>Gas Safety Certificates</h3>
+        <p>Landlord CP12 certificates issued same day. Domestic and commercial properties covered. Boiler service included. Digital certificate sent within 2 hours of inspection.</p>
+        <a href="#contact" class="sc-link">Learn more →</a>
+      </div>
+      <div class="service-card scroll-reveal" style="transition-delay:0.4s">
+        <div class="sc-tag">Free Consult</div>
+        <div class="sc-icon">🛁</div>
+        <h3>Bathroom Fitting</h3>
+        <p>Full bathroom design, supply and installation. Wetrooms, en-suites, and full refurbs. We supply the suite or work with yours. Free design consultation included.</p>
+        <a href="#contact" class="sc-link">Learn more →</a>
+      </div>
+    </div>
+
+    <div class="emergency-banner scroll-reveal">
+      <div class="eb-left">
+        <div class="eb-icon">⚡</div>
+        <div>
+          <h3>Have a Plumbing Emergency Right Now?</h3>
+          <p>Don't wait. Call now and a Gas Safe engineer will be with you across Leeds.</p>
+        </div>
+      </div>
+      <div class="eb-right">
+        <a href="tel:01134882901" class="btn-primary">📞 Call 0113 488 2901</a>
+        <span class="eb-sub">Answered 24 hours a day, 365 days a year</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why-section" id="about">
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-left scroll-reveal">
+        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80" alt="Mark Heslop - Northern Flow founder and lead engineer" class="why-img" loading="lazy">
+        <div class="why-owner-card">
+          <div class="oc-name">Mark Heslop</div>
+          <div class="oc-title">Founder &amp; Lead Engineer</div>
+          <div class="oc-gas">✔ Gas Safe No. 556821</div>
+        </div>
+        <div class="why-years-card">
+          <div class="yc-num">18 Years</div>
+          <div class="yc-lab">Experience in Leeds</div>
+        </div>
+      </div>
+      <div class="why-right scroll-reveal" style="transition-delay:0.15s">
+        <div class="section-label">Why Northern Flow</div>
+        <h2 class="section-h2">We Show Up, We Fix It,<br>We Don't Overcharge.</h2>
+        <p class="why-body">Mark started Northern Flow in 2007 with one van and a simple idea: Leeds homeowners deserve a plumber they can actually rely on. One who answers the phone at 2am, tells you the price upfront, and leaves the place cleaner than they found it.<br><br>Eighteen years later, that's still exactly what we do — just with a bigger team, better kit, and 2,600+ happy customers behind us.</p>
+        <ul class="feature-list" id="featureList">
+          <li><span class="feature-tick">✓</span><span>60-Minute Arrival Guarantee — or your call-out is completely FREE</span></li>
+          <li><span class="feature-tick">✓</span><span>Upfront fixed pricing — you see the full price before we start</span></li>
+          <li><span class="feature-tick">✓</span><span>Gas Safe registered engineer on every single job</span></li>
+          <li><span class="feature-tick">✓</span><span>All technicians fully DBS checked and uniformed</span></li>
+          <li><span class="feature-tick">✓</span><span>We tidy up after every job — no mess, no fuss, guaranteed</span></li>
+          <li><span class="feature-tick">✓</span><span>12-month workmanship guarantee on all labour</span></li>
+          <li><span class="feature-tick">✓</span><span>0% finance available on boiler installations</span></li>
+          <li><span class="feature-tick">✓</span><span>5-star rated on Google, Checkatrade and TrustATrader</span></li>
+        </ul>
+        <div class="guarantee-wrap">
+          <div class="guarantee-seal">
+            <div class="seal-num">60 MIN</div>
+            <div class="seal-resp">Response</div>
+            <div class="seal-gua">Guarantee</div>
+            <div class="seal-free">or it's free</div>
+          </div>
+          <p style="color:var(--muted);font-size:15px;line-height:1.8;max-width:280px;">If we're not at your door within 60 minutes, your call-out charge is completely waived. That's our promise.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section" id="work">
+  <div class="container">
+    <div class="scroll-reveal">
+      <div class="section-label">Our Work</div>
+      <h2 class="section-h2">Recent Jobs Across Leeds</h2>
+      <p style="color:var(--muted);max-width:600px;">Every photo is a real job carried out by our team across West Yorkshire.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-card scroll-reveal">
+        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&q=80" alt="Worcester Bosch boiler installation in Headingley Leeds" loading="lazy">
+        <div class="gallery-overlay"></div>
+        <div class="gallery-tag">Boiler</div>
+        <div class="gallery-info">
+          <div class="gi-title">Worcester Bosch Boiler Install</div>
+          <div class="gi-loc">Headingley, Leeds • December 2024</div>
+        </div>
+      </div>
+      <div class="gallery-card scroll-reveal" style="transition-delay:0.1s">
+        <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=80" alt="Full en-suite bathroom renovation in Roundhay Leeds" loading="lazy">
+        <div class="gallery-overlay"></div>
+        <div class="gallery-tag">Bathroom</div>
+        <div class="gallery-info">
+          <div class="gi-title">Full En-Suite Renovation</div>
+          <div class="gi-loc">Roundhay, Leeds • January 2025</div>
+        </div>
+      </div>
+      <div class="gallery-card scroll-reveal" style="transition-delay:0.2s">
+        <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=600&q=80" alt="Emergency pipe repair in Chapel Allerton Leeds" loading="lazy">
+        <div class="gallery-overlay"></div>
+        <div class="gallery-tag">Emergency</div>
+        <div class="gallery-info">
+          <div class="gi-title">Emergency Pipe Repair</div>
+          <div class="gi-loc">Chapel Allerton, Leeds • February 2025</div>
+        </div>
+      </div>
+      <div class="gallery-card scroll-reveal" style="transition-delay:0.3s">
+        <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80" alt="Central heating upgrade in Horsforth Leeds" loading="lazy">
+        <div class="gallery-overlay"></div>
+        <div class="gallery-tag">Heating</div>
+        <div class="gallery-info">
+          <div class="gi-title">Central Heating Upgrade</div>
+          <div class="gi-loc">Horsforth, Leeds • March 2025</div>
+        </div>
+      </div>
+      <div class="gallery-card scroll-reveal" style="transition-delay:0.1s">
+        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&q=80" alt="Family bathroom refit in Alwoodley Leeds" loading="lazy">
+        <div class="gallery-overlay"></div>
+        <div class="gallery-tag">Bathroom</div>
+        <div class="gallery-info">
+          <div class="gi-title">Family Bathroom Refit</div>
+          <div class="gi-loc">Alwoodley, Leeds • November 2024</div>
+        </div>
+      </div>
+      <div class="gallery-card scroll-reveal" style="transition-delay:0.2s">
+        <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=600&q=80" alt="Commercial boiler service in Leeds city centre" loading="lazy">
+        <div class="gallery-overlay"></div>
+        <div class="gallery-tag">Commercial</div>
+        <div class="gallery-info">
+          <div class="gi-title">Commercial Boiler Service</div>
+          <div class="gi-loc">Leeds City Centre • October 2024</div>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-footer scroll-reveal">
+      <p>📸 Follow our work on Instagram</p>
+      <p><a href="#">@northernflow_leeds</a> — 200+ photos of real Leeds jobs →</p>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-section" id="reviews">
+  <div class="container">
+    <div class="reviews-header scroll-reveal">
+      <div class="section-label">Customer Reviews</div>
+      <h2 class="section-h2">4.9 Stars — 214 Verified<br>Google Reviews</h2>
+      <div class="big-stars">★★★★★</div>
+      <p>Joined by hundreds of Leeds homeowners who now trust nobody else.</p>
+      <div class="reviews-avatars-row">
+        <div class="ra-imgs">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&q=80" alt="Sarah M" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80" alt="James T" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80" alt="Karen B" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&q=80" alt="David K" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&q=80" alt="Emma R" loading="lazy">
+        </div>
+        <span class="ra-text">and 209 others left us 5 stars</span>
+      </div>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card scroll-reveal">
+        <div class="rc-top">
+          <div class="rc-google">
+            <div class="g-icon"><span>G</span></div>
+            <span class="rc-label">Google Review</span>
+          </div>
+          <span class="rc-date">12 January 2025</span>
+        </div>
+        <div class="rc-stars">★★★★★</div>
+        <div class="rc-text">Called at 11:30pm on a Sunday after a pipe burst in our kitchen. Mark's team arrived in 48 minutes — just as promised. They were professional, calm, and had it fixed in under two hours. Cannot thank them enough. Absolute lifesavers.</div>
+        <div class="rc-reviewer">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&q=80" alt="Sarah M" loading="lazy">
+          <div>
+            <div class="rr-name">Sarah M.</div>
+            <div class="rr-loc">Headingley, Leeds</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card scroll-reveal" style="transition-delay:0.1s">
+        <div class="rc-top">
+          <div class="rc-google">
+            <div class="g-icon"><span>G</span></div>
+            <span class="rc-label">Google Review</span>
+          </div>
+          <span class="rc-date">3 December 2024</span>
+        </div>
+        <div class="rc-stars">★★★★★</div>
+        <div class="rc-text">Boiler completely packed in on a Friday afternoon before a cold weekend. Northern Flow had a new Worcester Bosch installed by 11am Saturday morning. Price was exactly what they quoted — not a penny more. Would recommend to everyone in Leeds.</div>
+        <div class="rc-reviewer">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80" alt="James T" loading="lazy">
+          <div>
+            <div class="rr-name">James T.</div>
+            <div class="rr-loc">Roundhay, Leeds</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card scroll-reveal" style="transition-delay:0.2s">
+        <div class="rc-top">
+          <div class="rc-google">
+            <div class="g-icon"><span>G</span></div>
+            <span class="rc-label">Google Review</span>
+          </div>
+          <span class="rc-date">28 February 2025</span>
+        </div>
+        <div class="rc-stars">★★★★★</div>
+        <div class="rc-text">Used them four times now — for good reason. Always on time. Always upfront about cost. Always spotlessly tidy afterwards. Had my Gas Safe cert done same day for my rental. Brilliant service.</div>
+        <div class="rc-reviewer">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80" alt="Karen B" loading="lazy">
+          <div>
+            <div class="rr-name">Karen B.</div>
+            <div class="rr-loc">Horsforth, Leeds</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card scroll-reveal" style="transition-delay:0.1s">
+        <div class="rc-top">
+          <div class="rc-google">
+            <div class="g-icon"><span>G</span></div>
+            <span class="rc-label">Google Review</span>
+          </div>
+          <span class="rc-date">7 March 2025</span>
+        </div>
+        <div class="rc-stars">★★★★★</div>
+        <div class="rc-text">Discovered a hidden leak under our bathroom floor causing damp. Other plumbers wanted to rip up all the tiles to find it. Northern Flow used their thermal camera and found it in 20 minutes. Saved us an absolute fortune. Genuinely impressive.</div>
+        <div class="rc-reviewer">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&q=80" alt="David K" loading="lazy">
+          <div>
+            <div class="rr-name">David K.</div>
+            <div class="rr-loc">Chapel Allerton, Leeds</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card scroll-reveal" style="transition-delay:0.2s">
+        <div class="rc-top">
+          <div class="rc-google">
+            <div class="g-icon"><span>G</span></div>
+            <span class="rc-label">Google Review</span>
+          </div>
+          <span class="rc-date">19 November 2024</span>
+        </div>
+        <div class="rc-stars">★★★★★</div>
+        <div class="rc-text">Had the full en-suite done — new suite, tiling, everything. Spotless workmanship, no hidden costs, and they even painted the walls as a goodwill gesture when a tile caused a small mark. 10/10 company.</div>
+        <div class="rc-reviewer">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&q=80" alt="Emma R" loading="lazy">
+          <div>
+            <div class="rr-name">Emma R.</div>
+            <div class="rr-loc">Alwoodley, Leeds</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reviews-cta scroll-reveal">
+      <div class="reviews-cta-card">
+        <p>★★★★★ Join 214 satisfied Leeds homeowners</p>
+        <a href="#" class="btn-ghost">Read All Google Reviews →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AREAS -->
+<section class="areas-section" id="areas">
+  <div class="container">
+    <div class="scroll-reveal">
+      <div class="section-label">Where We Work</div>
+      <h2 class="section-h2">Based in LS4 —<br>We Cover All of Leeds</h2>
+    </div>
+    <div class="areas-grid">
+      <div class="map-visual scroll-reveal">
+        <div class="map-ping"></div>
+        <div class="map-leeds">LEEDS</div>
+        <div class="map-sub">&amp; Surrounding Areas</div>
+        <div class="map-dots">
+          <div class="map-dot">City Centre</div>
+          <div class="map-dot">Headingley</div>
+          <div class="map-dot">Roundhay</div>
+          <div class="map-dot">Horsforth</div>
+          <div class="map-dot">Morley</div>
+        </div>
+        <div class="map-bottom">Covering all LS postcodes</div>
+      </div>
+      <div class="areas-right scroll-reveal" style="transition-delay:0.15s">
+        <p class="areas-body">From Wetherby in the north to Morley in the south, if you're in a Leeds postcode, we cover you. We're typically on-site within 60 minutes from our Kirkstall base.</p>
+        <div class="chips-grid">
+          <span class="area-chip">Leeds City Centre</span>
+          <span class="area-chip">Headingley</span>
+          <span class="area-chip">Roundhay</span>
+          <span class="area-chip">Horsforth</span>
+          <span class="area-chip">Armley</span>
+          <span class="area-chip">Chapel Allerton</span>
+          <span class="area-chip">Alwoodley</span>
+          <span class="area-chip">Morley</span>
+          <span class="area-chip">Pudsey</span>
+          <span class="area-chip">Kirkstall</span>
+          <span class="area-chip">Meanwood</span>
+          <span class="area-chip">Burley</span>
+          <span class="area-chip">Hyde Park</span>
+          <span class="area-chip">Beeston</span>
+          <span class="area-chip">Harehills</span>
+          <span class="area-chip">Seacroft</span>
+          <span class="area-chip">Cross Gates</span>
+          <span class="area-chip">Garforth</span>
+          <span class="area-chip">Rothwell</span>
+          <span class="area-chip">Wetherby</span>
+          <span class="area-chip">Otley</span>
+          <span class="area-chip">Guiseley</span>
+          <span class="area-chip">Yeadon</span>
+          <span class="area-chip">Farsley</span>
+          <span class="area-chip">Bramley</span>
+          <span class="area-chip">Cookridge</span>
+          <span class="area-chip">Shadwell</span>
+          <span class="area-chip">Woodhouse</span>
+        </div>
+        <p class="areas-note"><em>Don't see your area? Call us — we likely cover it.</em> <a href="tel:01134882901">0113 488 2901 →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-left scroll-reveal">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-h2">Let's Sort Your<br>Plumbing Problem.</h2>
+        <p>For emergencies, call now. For quotes and non-urgent work, fill in the form and we'll be back within 2 hours.</p>
+        <div class="contact-card red-card">
+          <div class="cc-icon">📞</div>
+          <a href="tel:01134882901" class="cc-phone-num">0113 488 2901</a>
+          <div class="cc-label">24/7 Emergency Line — Always Answered</div>
+        </div>
+        <div class="contact-card gold-card">
+          <div class="cc-text">✉ info@northernflow.co.uk</div>
+          <div class="cc-sub">Reply within 2 hours Mon–Fri</div>
+        </div>
+        <div class="contact-card">
+          <div class="cc-text">📍 Unit 4, Kirkstall Road, Leeds, LS4 2AW</div>
+          <div class="cc-sub">Serving all LS postcodes and surrounding areas</div>
+        </div>
+        <div class="contact-card">
+          <div class="cc-text" style="font-weight:600;">Emergency line: 24 hours / 7 days / 365 days</div>
+          <div class="cc-sub">Office: Mon–Fri 8am–6pm | Sat 9am–4pm</div>
+          <div class="cc-sub" style="margin-top:4px;">Out-of-hours surcharge may apply (we'll always tell you first)</div>
+        </div>
+        <div class="gas-badge">
+          <div class="gb-title">⛽ Gas Safe Registered</div>
+          <div class="gb-num">Registration No. 556821</div>
+          <a href="#" class="gb-link">Verify at GasSafeRegister.co.uk →</a>
+        </div>
+      </div>
+      <div class="contact-right scroll-reveal" style="transition-delay:0.15s">
+        <div class="form-wrap">
+          <div id="quoteForm">
+            <div class="form-title">Free Quote — We Reply in 2 Hours</div>
+            <p class="form-sub">Not an emergency? Fill this in and we'll get back to you fast.</p>
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label" for="fullName">Full Name *</label>
+                <input class="form-input" type="text" id="fullName" placeholder="e.g. Sarah Johnson">
+                <div class="form-error" id="nameError">Please enter your name</div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone Number *</label>
+                <input class="form-input" type="tel" id="phone" placeholder="e.g. 07700 123 456">
+                <div class="form-error" id="phoneError">Please enter your phone number</div>
+              </div>
+            </div>
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address</label>
+                <input class="form-input" type="email" id="email" placeholder="e.g. sarah@email.com">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="postcode">Your Postcode *</label>
+                <input class="form-input" type="text" id="postcode" placeholder="e.g. LS6 2AB" maxlength="8">
+                <div class="form-error" id="postcodeError">Please enter your postcode</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="service">Service Needed *</label>
+              <select class="form-select" id="service">
+                <option value="">-- Please select a service --</option>
+                <option>Emergency Plumbing</option>
+                <option>Boiler Repair</option>
+                <option>Boiler Installation / Replacement</option>
+                <option>Central Heating</option>
+                <option>Gas Safety Certificate (CP12)</option>
+                <option>Bathroom Fitting</option>
+                <option>Drain Unblocking</option>
+                <option>Leak Detection</option>
+                <option>Other / Not Sure</option>
+              </select>
+              <div class="form-error" id="serviceError">Please select a service</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Is this an emergency?</label>
+              <div class="radio-group">
+                <label class="radio-option">
+                  <input type="radio" name="urgency" value="emergency">
+                  <span class="radio-custom"></span>
+                  <span class="radio-label">⚠ Yes — Please call me back ASAP</span>
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="urgency" value="quote" checked>
+                  <span class="radio-custom"></span>
+                  <span class="radio-label">📋 No — Just a quote is fine</span>
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="description">Describe the Problem</label>
+              <textarea class="form-textarea" id="description" rows="4" placeholder="e.g. Our boiler stopped working this morning, no hot water or heating. Ideal Logic boiler, about 8 years old."></textarea>
+            </div>
+            <button class="btn-submit" onclick="submitForm()">📋 Send My Free Quote Request</button>
+            <div class="form-secure">🔒 Your details are safe. We never share your information. SSL encrypted.</div>
+          </div>
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">✅</div>
+            <h3>Quote Request Received!</h3>
+            <p>We'll call you back within 2 hours. For emergencies, call <a href="tel:01134882901">0113 488 2901</a> now.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand scroll-reveal">
+        <div class="fb-logo">Northern Flow</div>
+        <div class="fb-sub">Plumbing &amp; Heating</div>
+        <p class="fb-desc">Leeds' most trusted Gas Safe plumber and heating engineer. Serving West Yorkshire since 2007. Available 24 hours, every day of the year.</p>
+        <div class="social-row">
+          <a href="#" class="social-btn" title="Instagram">📷</a>
+          <a href="#" class="social-btn" title="Facebook">📘</a>
+          <a href="#" class="social-btn" title="Google">🔍</a>
+        </div>
+      </div>
+      <div class="footer-col scroll-reveal" style="transition-delay:0.1s">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#services">Emergency</a></li>
+          <li><a href="#services">Boilers</a></li>
+          <li><a href="#services">Bathrooms</a></li>
+          <li><a href="#services">Gas Safety</a></li>
+          <li><a href="#areas">Service Areas</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col scroll-reveal" style="transition-delay:0.2s">
+        <h4>Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="#services">Emergency Plumbing</a></li>
+          <li><a href="#services">Boiler Repair</a></li>
+          <li><a href="#services">Boiler Installation</a></li>
+          <li><a href="#services">Central Heating</a></li>
+          <li><a href="#services">Gas Safety Certs</a></li>
+          <li><a href="#services">Bathroom Fitting</a></li>
+          <li><a href="#services">Drain Unblocking</a></li>
+          <li><a href="#services">Leak Detection</a></li>
+        </ul>
+      </div>
+      <div class="footer-col scroll-reveal" style="transition-delay:0.3s">
+        <h4>Contact Us</h4>
+        <a href="tel:01134882901" class="footer-contact-num">📞 0113 488 2901</a>
+        <div class="footer-contact-item">✉ info@northernflow.co.uk</div>
+        <div class="footer-contact-item">📍 Kirkstall Road, Leeds, LS4 2AW</div>
+        <div class="footer-trust-badges">
+          <span class="ftb-pill ftb-green">✔ Gas Safe Reg: 556821</span>
+          <span class="ftb-pill ftb-gold">★ Checkatrade Verified</span>
+          <span class="ftb-pill ftb-grey">🛡 Fully Insured — £2m PLI</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="fb-legal">© 2025 Northern Flow Plumbing &amp; Heating Ltd. Company No. 09847231 | VAT No. GB 287 4421 09</div>
+      <div class="fb-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+      <div class="fb-credit">Site by <span style="letter-spacing:1px;">Your Agency Name</span></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ── NAV SCROLL ──
+const nav = document.getElementById('mainNav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// ── MOBILE MENU ──
+document.getElementById('hamburger').addEventListener('click', () => {
+  document.getElementById('mobileMenu').classList.add('open');
+});
+document.getElementById('menuClose').addEventListener('click', closeMobileMenu);
+function closeMobileMenu() {
+  document.getElementById('mobileMenu').classList.remove('open');
+}
+
+// ── SCROLL REVEAL ──
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.15 });
+document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+
+// ── FEATURE LIST STAGGER ──
+const featureObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const items = entry.target.querySelectorAll('li');
+      items.forEach((li, i) => {
+        setTimeout(() => li.classList.add('visible'), i * 80);
+      });
+    }
+  });
+}, { threshold: 0.2 });
+const fl = document.getElementById('featureList');
+if (fl) featureObserver.observe(fl);
+
+// ── COUNTER ANIMATION ──
+function animateCounter(el, target, suffix = '', duration = 1500) {
+  const start = 0;
+  const startTime = performance.now();
+  function update(currentTime) {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    const current = Math.floor(start + (target - start) * eased);
+    el.textContent = current.toLocaleString() + suffix;
+    if (progress < 1) requestAnimationFrame(update);
+  }
+  requestAnimationFrame(update);
+}
+
+const statsBar = document.querySelector('.hero-stats-bar');
+let statsAnimated = false;
+const statsObs = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !statsAnimated) {
+      statsAnimated = true;
+      document.querySelectorAll('.stat-val[data-target]').forEach(el => {
+        const target = parseInt(el.dataset.target);
+        const suffix = el.dataset.suffix || '';
+        animateCounter(el, target, suffix);
+      });
+    }
+  });
+}, { threshold: 0.5 });
+if (statsBar) statsObs.observe(statsBar);
+
+// ── JOB COUNTER (hero float) ──
+const jobCounter = document.getElementById('jobCounter');
+if (jobCounter) {
+  setTimeout(() => animateCounter(jobCounter, 47, '', 2000), 1500);
+}
+
+// ── FORM SUBMISSION ──
+function submitForm() {
+  let valid = true;
+  const name = document.getElementById('fullName');
+  const phone = document.getElementById('phone');
+  const postcode = document.getElementById('postcode');
+  const service = document.getElementById('service');
+  
+  // Reset errors
+  document.querySelectorAll('.form-error').forEach(e => e.style.display = 'none');
+  document.querySelectorAll('.form-input, .form-select').forEach(el => el.classList.remove('error'));
+  
+  if (!name.value.trim()) {
+    document.getElementById('nameError').style.display = 'block';
+    name.classList.add('error');
+    valid = false;
+  }
+  if (!phone.value.trim()) {
+    document.getElementById('phoneError').style.display = 'block';
+    phone.classList.add('error');
+    valid = false;
+  }
+  if (!postcode.value.trim()) {
+    document.getElementById('postcodeError').style.display = 'block';
+    postcode.classList.add('error');
+    valid = false;
+  }
+  if (!service.value) {
+    document.getElementById('serviceError').style.display = 'block';
+    service.classList.add('error');
+    valid = false;
+  }
+  
+  if (valid) {
+    document.getElementById('quoteForm').style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+  }
+}
+
+// ── MOBILE STICKY BOUNCE ──
+const stickyBar = document.querySelector('.mobile-sticky-bar');
+if (stickyBar) {
+  setTimeout(() => {
+    stickyBar.style.animation = 'bounceIn 0.5s ease';
+  }, 1500);
+}
+
+// ── PHONE GLOW PULSE ──
+const barPhone = document.querySelector('.announce-bar .bar-phone');
+if (barPhone) {
+  setInterval(() => {
+    barPhone.style.textShadow = '0 0 12px rgba(11,15,26,0.6)';
+    setTimeout(() => barPhone.style.textShadow = '', 500);
+  }, 5000);
+}
+</script>
+</body>
+</html>
